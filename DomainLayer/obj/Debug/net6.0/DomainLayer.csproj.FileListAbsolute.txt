@@ -1,0 +1,14 @@
+I:\Divyanshu\Project\ProjBackend\ProjectBackEnd\DomainLayer\bin\Debug\net6.0\DomainLayer.deps.json
+I:\Divyanshu\Project\ProjBackend\ProjectBackEnd\DomainLayer\bin\Debug\net6.0\DomainLayer.runtimeconfig.json
+I:\Divyanshu\Project\ProjBackend\ProjectBackEnd\DomainLayer\bin\Debug\net6.0\DomainLayer.dll
+I:\Divyanshu\Project\ProjBackend\ProjectBackEnd\DomainLayer\bin\Debug\net6.0\DomainLayer.pdb
+I:\Divyanshu\Project\ProjBackend\ProjectBackEnd\DomainLayer\obj\Debug\net6.0\DomainLayer.csproj.AssemblyReference.cache
+I:\Divyanshu\Project\ProjBackend\ProjectBackEnd\DomainLayer\obj\Debug\net6.0\DomainLayer.GeneratedMSBuildEditorConfig.editorconfig
+I:\Divyanshu\Project\ProjBackend\ProjectBackEnd\DomainLayer\obj\Debug\net6.0\DomainLayer.AssemblyInfoInputs.cache
+I:\Divyanshu\Project\ProjBackend\ProjectBackEnd\DomainLayer\obj\Debug\net6.0\DomainLayer.AssemblyInfo.cs
+I:\Divyanshu\Project\ProjBackend\ProjectBackEnd\DomainLayer\obj\Debug\net6.0\DomainLayer.csproj.CoreCompileInputs.cache
+I:\Divyanshu\Project\ProjBackend\ProjectBackEnd\DomainLayer\obj\Debug\net6.0\DomainLayer.dll
+I:\Divyanshu\Project\ProjBackend\ProjectBackEnd\DomainLayer\obj\Debug\net6.0\refint\DomainLayer.dll
+I:\Divyanshu\Project\ProjBackend\ProjectBackEnd\DomainLayer\obj\Debug\net6.0\DomainLayer.pdb
+I:\Divyanshu\Project\ProjBackend\ProjectBackEnd\DomainLayer\obj\Debug\net6.0\DomainLayer.genruntimeconfig.cache
+I:\Divyanshu\Project\ProjBackend\ProjectBackEnd\DomainLayer\obj\Debug\net6.0\ref\DomainLayer.dll
