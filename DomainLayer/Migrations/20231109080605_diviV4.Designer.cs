@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace DomainLayer.Migrations
 {
     [DbContext(typeof(appDbContext))]
-    [Migration("20231107110515_diviTaskV1")]
-    partial class diviTaskV1
+    [Migration("20231109080605_diviV4")]
+    partial class diviV4
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -47,9 +47,12 @@ namespace DomainLayer.Migrations
                     b.Property<DateTime>("taskStartTime")
                         .HasColumnType("datetime2");
 
+                    b.Property<int>("userId")
+                        .HasColumnType("int");
+
                     b.HasKey("Id");
 
-                    b.ToTable("taskTable");
+                    b.ToTable("taskTable3");
                 });
 #pragma warning restore 612, 618
         }

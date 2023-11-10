@@ -57,7 +57,7 @@ namespace ProjectBackEnd.Controllers
                 return BadRequest("Something went wrong");
             }
         }
-        [HttpPost(nameof(UpdateStudent))]
+        [HttpPut(nameof(UpdateStudent))]
         public IActionResult UpdateStudent(taskStruct taskVariable)
         {
             if (taskVariable != null)

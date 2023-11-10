@@ -17,6 +17,7 @@ namespace DomainLayer.Models
         public DateTime taskStartTime { get; set; }
 
         public DateTime taskEndTime { get; set; }
+        public int userId { get; set; }
 
 
     }

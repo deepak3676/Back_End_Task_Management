@@ -6,13 +6,13 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace DomainLayer.Migrations
 {
     /// <inheritdoc />
-    public partial class diviTaskV1 : Migration
+    public partial class diviV4 : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.CreateTable(
-                name: "taskTable",
+                name: "taskTable3",
                 columns: table => new
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
@@ -20,11 +20,12 @@ namespace DomainLayer.Migrations
                     taskName = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     taskDescription = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     taskStartTime = table.Column<DateTime>(type: "datetime2", nullable: false),
-                    taskEndTime = table.Column<DateTime>(type: "datetime2", nullable: false)
+                    taskEndTime = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    userId = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_taskTable", x => x.Id);
+                    table.PrimaryKey("PK_taskTable3", x => x.Id);
                 });
         }
 
@@ -32,7 +33,7 @@ namespace DomainLayer.Migrations
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
-                name: "taskTable");
+                name: "taskTable3");
         }
     }
 }

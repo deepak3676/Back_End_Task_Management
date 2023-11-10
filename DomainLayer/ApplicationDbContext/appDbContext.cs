@@ -11,6 +11,6 @@ namespace DomainLayer.ApplicationDbContext
     public class appDbContext:DbContext
     {
         public appDbContext(DbContextOptions<appDbContext> options) : base(options) { }
-        public DbSet<taskStruct> taskTable { get; set; }
+        public DbSet<taskStruct> taskTable3 { get; set; }
     }
 }

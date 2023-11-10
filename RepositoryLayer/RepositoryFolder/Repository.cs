@@ -25,11 +25,11 @@ namespace RepositoryLayer.RepositoryFolder
         #endregion
         public void Delete(int Id)
         {
-            var result=_applicationDbContext.taskTable.FirstOrDefault(l=>l.Id == Id);
+            var result=_applicationDbContext.taskTable3.FirstOrDefault(l=>l.Id == Id);
 
             if (result!= null)
             {
-                _applicationDbContext.taskTable.Remove(result);
+                _applicationDbContext.taskTable3.Remove(result);
                 _applicationDbContext.SaveChanges();
             }
         }

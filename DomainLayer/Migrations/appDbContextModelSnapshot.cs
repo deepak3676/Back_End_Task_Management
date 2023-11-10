@@ -44,9 +44,12 @@ namespace DomainLayer.Migrations
                     b.Property<DateTime>("taskStartTime")
                         .HasColumnType("datetime2");
 
+                    b.Property<int>("userId")
+                        .HasColumnType("int");
+
                     b.HasKey("Id");
 
-                    b.ToTable("taskTable");
+                    b.ToTable("taskTable3");
                 });
 #pragma warning restore 612, 618
         }
