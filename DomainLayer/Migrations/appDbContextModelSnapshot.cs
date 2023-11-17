@@ -44,8 +44,9 @@ namespace DomainLayer.Migrations
                     b.Property<DateTime>("taskStartTime")
                         .HasColumnType("datetime2");
 
-                    b.Property<int>("userId")
-                        .HasColumnType("int");
+                    b.Property<string>("userName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
 

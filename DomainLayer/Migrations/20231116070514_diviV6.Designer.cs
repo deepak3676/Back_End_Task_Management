@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace DomainLayer.Migrations
 {
     [DbContext(typeof(appDbContext))]
-    [Migration("20231109080605_diviV4")]
-    partial class diviV4
+    [Migration("20231116070514_diviV6")]
+    partial class diviV6
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -47,8 +47,9 @@ namespace DomainLayer.Migrations
                     b.Property<DateTime>("taskStartTime")
                         .HasColumnType("datetime2");
 
-                    b.Property<int>("userId")
-                        .HasColumnType("int");
+                    b.Property<string>("userName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
 

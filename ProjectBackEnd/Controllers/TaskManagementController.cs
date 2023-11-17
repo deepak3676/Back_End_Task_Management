@@ -17,8 +17,39 @@ namespace ProjectBackEnd.Controllers
             _customService = customService;
             _applicationDbContext = applicationDbContext;
         }
-        [HttpGet(nameof(GetTaskById))]
-        public IActionResult GetTaskById(int Id)
+        [HttpGet(nameof(GetByUserName))]
+        public IActionResult GetByUserName(string userName)
+        {
+            try
+            {
+                var obj = _customService.GetByUserName(userName);
+
+                if (obj == null)
+                {
+                    if (string.IsNullOrEmpty(userName))
+                    {
+                        // Handle the case where userId is 0 and return an appropriate response.
+                        // For example, you might want to return an empty list or a specific message.
+                        return Ok(new List<taskStruct>()); // Or return NotFound("No data found for userId 0");
+                    }
+                    else
+                    {
+                        return NotFound($"No data found for the specified userName: {userName}");
+                    }
+                }
+                else
+                {
+                    return Ok(obj);
+                }
+            }
+            catch (Exception ex)
+            {
+                // Log the exception or handle it accordingly
+                return StatusCode(StatusCodes.Status500InternalServerError, $"An error occurred: {ex.Message}");
+            }
+        }
+        [HttpGet(nameof(GetById))]
+        public IActionResult GetById(int Id)
         {
             var obj = _customService.Get(Id);
             if (obj == null)
@@ -30,8 +61,9 @@ namespace ProjectBackEnd.Controllers
                 return Ok(obj);
             }
         }
-        [HttpGet(nameof(GetAllTask))]
-        public IActionResult GetAllTask()
+
+        [HttpGet(nameof(GetAll))]
+        public IActionResult GetAll()
         {
             var obj = _customService.GetAll();
             if (obj == null)
@@ -43,8 +75,8 @@ namespace ProjectBackEnd.Controllers
                 return Ok(obj);
             }
         }
-        [HttpPost(nameof(CreateTask))]
-        public IActionResult CreateTask(taskStruct taskVariable)
+        [HttpPost(nameof(Create))]
+        public IActionResult Create(taskStruct taskVariable)
         {
             
             if (taskVariable != null)
@@ -57,8 +89,8 @@ namespace ProjectBackEnd.Controllers
                 return BadRequest("Something went wrong");
             }
         }
-        [HttpPut(nameof(UpdateStudent))]
-        public IActionResult UpdateStudent(taskStruct taskVariable)
+        [HttpPut(nameof(Update))]
+        public IActionResult Update(taskStruct taskVariable)
         {
             if (taskVariable != null)
             {
@@ -71,7 +103,7 @@ namespace ProjectBackEnd.Controllers
             }
         }
         [HttpDelete("Delete/{Id}")]
-        public IActionResult DeleteStudent(string Id)
+        public IActionResult Delete(string Id)
         {
             var taskDetails = _customService.Delete(Id);
             return Ok(taskDetails);

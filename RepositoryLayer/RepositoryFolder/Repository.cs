@@ -33,13 +33,17 @@ namespace RepositoryLayer.RepositoryFolder
                 _applicationDbContext.SaveChanges();
             }
         }
-        public T Get(int Id)
+        public IEnumerable<T> GetByUserName(string userName)
         {
-            return entities.SingleOrDefault(c => c.Id == Id);
+            return entities.Where(e => e.userName == userName).ToList();
         }
         public IEnumerable<T> GetAll()
         {
             return entities.AsEnumerable();
+        }
+        public T Get(int Id)
+        {
+            return entities.SingleOrDefault(c => c.Id == Id);
         }
         public void Insert(T entity)
         {

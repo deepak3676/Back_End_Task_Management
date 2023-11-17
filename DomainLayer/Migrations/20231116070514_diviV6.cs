@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace DomainLayer.Migrations
 {
     /// <inheritdoc />
-    public partial class diviV4 : Migration
+    public partial class diviV6 : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -21,7 +21,7 @@ namespace DomainLayer.Migrations
                     taskDescription = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     taskStartTime = table.Column<DateTime>(type: "datetime2", nullable: false),
                     taskEndTime = table.Column<DateTime>(type: "datetime2", nullable: false),
-                    userId = table.Column<int>(type: "int", nullable: false)
+                    userName = table.Column<string>(type: "nvarchar(max)", nullable: false)
                 },
                 constraints: table =>
                 {

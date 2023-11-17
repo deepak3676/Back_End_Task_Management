@@ -9,6 +9,7 @@ namespace ServiceLayer.IServiceFolder
     public interface IService<T> where T : class
     {
         IEnumerable<T> GetAll();
+        IEnumerable<T> GetByUserName(string userName);
         T Get(int Id);
         void Insert(T entity);
         void Update(T entity);

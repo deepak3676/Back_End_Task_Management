@@ -13,11 +13,9 @@ namespace DomainLayer.Models
         public int Id { get; set; }
         public string taskName { get; set; }
         public string taskDescription { get; set; }
- 
         public DateTime taskStartTime { get; set; }
-
         public DateTime taskEndTime { get; set; }
-        public int userId { get; set; }
+        public string userName { get; set; }
 
 
     }

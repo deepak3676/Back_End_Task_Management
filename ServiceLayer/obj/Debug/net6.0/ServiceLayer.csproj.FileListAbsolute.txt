@@ -1,8 +1,3 @@
-I:\Divyanshu\Project\ProjBackend\ProjectBackEnd\ServiceLayer\obj\Debug\net6.0\ServiceLayer.csproj.AssemblyReference.cache
-I:\Divyanshu\Project\ProjBackend\ProjectBackEnd\ServiceLayer\obj\Debug\net6.0\ServiceLayer.GeneratedMSBuildEditorConfig.editorconfig
-I:\Divyanshu\Project\ProjBackend\ProjectBackEnd\ServiceLayer\obj\Debug\net6.0\ServiceLayer.AssemblyInfoInputs.cache
-I:\Divyanshu\Project\ProjBackend\ProjectBackEnd\ServiceLayer\obj\Debug\net6.0\ServiceLayer.AssemblyInfo.cs
-I:\Divyanshu\Project\ProjBackend\ProjectBackEnd\ServiceLayer\obj\Debug\net6.0\ServiceLayer.csproj.CoreCompileInputs.cache
 I:\Divyanshu\Project\ProjBackend\ProjectBackEnd\ServiceLayer\bin\Debug\net6.0\ServiceLayer.deps.json
 I:\Divyanshu\Project\ProjBackend\ProjectBackEnd\ServiceLayer\bin\Debug\net6.0\ServiceLayer.runtimeconfig.json
 I:\Divyanshu\Project\ProjBackend\ProjectBackEnd\ServiceLayer\bin\Debug\net6.0\ServiceLayer.dll
@@ -11,6 +6,11 @@ I:\Divyanshu\Project\ProjBackend\ProjectBackEnd\ServiceLayer\bin\Debug\net6.0\Do
 I:\Divyanshu\Project\ProjBackend\ProjectBackEnd\ServiceLayer\bin\Debug\net6.0\RepositoryLayer.dll
 I:\Divyanshu\Project\ProjBackend\ProjectBackEnd\ServiceLayer\bin\Debug\net6.0\DomainLayer.pdb
 I:\Divyanshu\Project\ProjBackend\ProjectBackEnd\ServiceLayer\bin\Debug\net6.0\RepositoryLayer.pdb
+I:\Divyanshu\Project\ProjBackend\ProjectBackEnd\ServiceLayer\obj\Debug\net6.0\ServiceLayer.csproj.AssemblyReference.cache
+I:\Divyanshu\Project\ProjBackend\ProjectBackEnd\ServiceLayer\obj\Debug\net6.0\ServiceLayer.GeneratedMSBuildEditorConfig.editorconfig
+I:\Divyanshu\Project\ProjBackend\ProjectBackEnd\ServiceLayer\obj\Debug\net6.0\ServiceLayer.AssemblyInfoInputs.cache
+I:\Divyanshu\Project\ProjBackend\ProjectBackEnd\ServiceLayer\obj\Debug\net6.0\ServiceLayer.AssemblyInfo.cs
+I:\Divyanshu\Project\ProjBackend\ProjectBackEnd\ServiceLayer\obj\Debug\net6.0\ServiceLayer.csproj.CoreCompileInputs.cache
 I:\Divyanshu\Project\ProjBackend\ProjectBackEnd\ServiceLayer\obj\Debug\net6.0\ServiceLayer.csproj.CopyComplete
 I:\Divyanshu\Project\ProjBackend\ProjectBackEnd\ServiceLayer\obj\Debug\net6.0\ServiceLayer.dll
 I:\Divyanshu\Project\ProjBackend\ProjectBackEnd\ServiceLayer\obj\Debug\net6.0\refint\ServiceLayer.dll

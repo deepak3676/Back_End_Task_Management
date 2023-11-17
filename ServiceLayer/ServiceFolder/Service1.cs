@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace ServiceLayer.ServiceFolder
 {
-    public class Service1:IService<taskStruct>
+    public class Service1:IService<taskStruct> 
     {
         private readonly IRepository1<taskStruct> _taskRepository;
         public Service1(IRepository1<taskStruct> taskRepository)
@@ -26,6 +26,25 @@ namespace ServiceLayer.ServiceFolder
             catch (Exception)
             {
                 return false;
+            }
+        }
+        public IEnumerable<taskStruct> GetByUserName(string userName)
+        {
+            try
+            {
+                var obj = _taskRepository.GetByUserName(userName);
+                if (obj != null)
+                {
+                    return obj;
+                }
+                else
+                {
+                    return null;
+                }
+            }
+            catch (Exception)
+            {
+                throw;
             }
         }
         public taskStruct Get(int Id)
